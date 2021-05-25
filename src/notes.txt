@@ -1,0 +1,79 @@
+component:
+
+    1. .ts 
+    2. .sepc.ts 
+    3. .html 
+    4. .css 
+
+    class 
+    
+
+    @Component({
+        selector:"app-login",
+        templateUrl:"./login.component.html",
+        styleUrls: ['./login.component.css'] 
+    })
+   export class LoginComponent{
+
+
+    }
+
+  mapping --> app.module.ts --> declarations array    
+
+ng generate component login 
+ng g c login
+
+-----------------------------------
+
+to convert ts file into js we need to install tsc 
+type script compiler 
+
+.ts ==> .js ==>  browser / node 
+
+to install 
+npm install -g typescript 
+tsc --version 
+
+
+to compile type script file 
+
+tsc filename.ts 
+
+tsc first.ts // this will transpile your .ts file into .js file 
+node first.js //this will run your .js file 
+
+----------------------------------------
+
+let  vs var 
+
+let,var -> type script 
+var -> java script 
+
+scope:- 
+let - local 
+var - global 
+
+
+-------------------------
+
+how to transfer data from component to view ?? 
+ans: you don't need to transfer, all instance variables are avaialable in view. 
+
+how to print it? 
+ans: using interpolation 
+{{}}
+
+
+data binding 
+1) one way bind --> component=> html  [ngModel]="a" 
+2) two way bind -->  component <==> html  [(ngModel)]="a" 
+
+
+decorators :
+  @Component 
+
+directive:  [ dom manipulation ]
+  *ngIf 
+
+
+
