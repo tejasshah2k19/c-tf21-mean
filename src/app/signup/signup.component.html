@@ -2,9 +2,9 @@
 <h2>Signup</h2>
 
 <form >
-    FirstName : <input type="text" name="firstName"/><br>
-    Email : <input type="text" name="email"/><br>
-    Password : <input type="text" name="password"/><br>
+    FirstName : <input [(ngModel)]="firstName"  type="text" name="firstName"/><br>
+    Email : <input [(ngModel)]="email"  type="text" name="email"/><br>
+    Password : <input [(ngModel)]="password" type="text" name="password"/><br>
 
-    <input type="button" value="Signup"/>
+    <input type="button" (click)="saveUser()"  value="Signup"/>
 </form>

@@ -75,5 +75,31 @@ decorators :
 directive:  [ dom manipulation ]
   *ngIf 
 
+-------------------------------
+
+href=routerLink 
+app.component.html-> dynamic tempalte load --> <router-outlet></router-outlet>
+
+to map url to component we will use app.rountingmodule.ts in which we map component inside 
+routes array.
+
+
+-------------------------------
+
+service :- 
+ it's a class , but it follows singleton design pattern
+  we have single object throught the app.  so only single object present in memory through entire lifecylce of your app. 
+
+  1) reusable methods 
+  2) arrays 
+  3) api call 
+  4) db call 
+  5)........
+
+@Injectable({})
+export class UserService{
+}
+
+
 
 
