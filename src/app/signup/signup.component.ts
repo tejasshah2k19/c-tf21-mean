@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UserService } from '../user.service';
 
 @Component({
@@ -9,23 +10,23 @@ import { UserService } from '../user.service';
 export class SignupComponent implements OnInit {
 
 
-  users:Array<any>= []
+  users: Array<any> = []
 
 
-  firstName:string=""
-  email:string=""
-  password:string=""
-  constructor(private userService:UserService) { }
+  firstName: string = ""
+  email: string = ""
+  password: string = ""
+  constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  saveUser(){
+  saveUser() {
 
     console.log(this.firstName);
-   let user = {"firstName":this.firstName,"email":this.email,"password":this.password} 
-    this.userService.users.push(user);
-   console.log(this.userService.users)
+    let user = { "firstName": this.firstName, "email": this.email, "password": this.password }
+    this.userService.saveUser(user);
+    this.router.navigateByUrl("/listusers");
   }
 
 }

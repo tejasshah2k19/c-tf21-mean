@@ -100,6 +100,11 @@ service :-
 export class UserService{
 }
 
+-------------------------------
+how to navigate from 1 resource to other ?
+1 view to another view ? 
+
+ans: Router 
 
 
 

@@ -8,13 +8,15 @@ import { SignupComponent } from './signup/signup.component';
 import { MenuComponent } from './menu/menu.component';
 import { CalcComponent } from './calc/calc.component';
 import { FormsModule } from '@angular/forms';
+import { ListUserComponent } from './list-user/list-user.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
     MenuComponent,
-    CalcComponent
+    CalcComponent,
+    ListUserComponent
   ],
   imports: [
     BrowserModule,
