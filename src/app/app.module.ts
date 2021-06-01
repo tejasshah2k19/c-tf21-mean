@@ -9,6 +9,10 @@ import { MenuComponent } from './menu/menu.component';
 import { CalcComponent } from './calc/calc.component';
 import { FormsModule } from '@angular/forms';
 import { ListUserComponent } from './list-user/list-user.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,12 +20,15 @@ import { ListUserComponent } from './list-user/list-user.component';
     SignupComponent,
     MenuComponent,
     CalcComponent,
-    ListUserComponent
+    ListUserComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), // ToastrModule added
   ],
   providers: [],
   bootstrap: [AppComponent]

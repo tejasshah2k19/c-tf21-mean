@@ -12,7 +12,7 @@
         <td>{{u.firstName}}</td>
         <td>{{u.email}}</td>
         <td>{{u.password}}</td>
-    <td>Edit | <button (click)="deleteUser(u.email)" >Delete</button> </td>
+    <td><a routerLink="/edituser/{{u.email}}">Edit</a> | <button (click)="deleteUser(u.email)" >Delete</button> </td>
     </tr>
 
 </table>

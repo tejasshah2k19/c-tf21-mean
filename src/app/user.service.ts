@@ -27,10 +27,29 @@ export class UserService {
     // }
     // this.userService.users.splice(searchUser,1);
     // console.log(this.userService.users) 
-
     this.users =  this.users.filter(u=>u.email != email)
-   
-
  }
   constructor() { }
+
+ getUserByEmail(email:string):any{
+
+  for(let i=0;i<this.users.length;i++){
+    if(this.users[i].email == email ){
+      return this.users[i]
+    }
+  }
+
+  return null
+ }
+
+ updateUserByEmail(user:any){
+
+  for(let i=0;i<this.users.length;i++){
+    if(this.users[i].email == user.email ){
+      this.users[i] = user 
+    }
+  }
+
+ }
+
 }

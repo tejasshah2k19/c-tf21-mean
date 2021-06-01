@@ -105,6 +105,10 @@ how to navigate from 1 resource to other ?
 1 view to another view ? 
 
 ans: Router 
+----------------------------------------
+
+to fetch data from url we need to use ActivatedRoute class 
+
 
 
 
