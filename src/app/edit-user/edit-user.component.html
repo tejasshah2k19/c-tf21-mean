@@ -2,8 +2,8 @@
 <h2>Edit</h2>
 
 <form >
-    FirstName : <input [(ngModel)]="firstName"  type="text" name="firstName"/><br>
-    Password : <input [(ngModel)]="password" type="text" name="password"/><br>
+    FirstName : <input [(ngModel)]="user.firstName"  type="text" name="firstName"/><br>
+    Password : <input [(ngModel)]="user.password" type="text" name="password"/><br>
 
     <input type="button" (click)="updateUser()"   value="Update"/>
 </form>

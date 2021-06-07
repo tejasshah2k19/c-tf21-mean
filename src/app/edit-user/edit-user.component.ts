@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { User } from '../user';
 import { UserService } from '../user.service';
 
 @Component({
@@ -13,25 +14,19 @@ export class EditUserComponent implements OnInit {
   constructor(private route:ActivatedRoute,private userService:UserService,private router:Router,private toastr:ToastrService) { }
 
 
-  firstName: string = ""
-  email: string = ""
-  password: string = ""
-  ngOnInit(): void {
-    this.email = this.route.snapshot.params.email  
-    console.log("email => "+this.email);
-    let user =  this.userService.getUserByEmail(this.email);
-    this.firstName = user.firstName
-    this.password = user.password 
+ user:User = {email:"",firstName:"",password:""}
 
+ ngOnInit(): void {
 
-  }
+    this.user.email = this.route.snapshot.params.email  
+    console.log("email => "+this.user.email);
+    this.user =  this.userService.getUserByEmail(this.user.email);
+ }
+ 
   updateUser() {
-    console.log(this.email);
-    console.log(this.firstName);
-    console.log(this.password);
-    let user  = {"firstName":this.firstName,"email":this.email,"password":this.password}
-
-    this.userService.updateUserByEmail(user);
+    console.log(this.user);
+    
+    this.userService.updateUserByEmail(this.user.email);
     this.toastr.success("User Updated","",{
       timeOut:3000
     })

@@ -1,18 +1,19 @@
 import { Injectable } from '@angular/core';
+import { User } from './user';
 
 @Injectable({
   providedIn: 'root' //global 
 })
 export class UserService {
 
- public users:Array<any>=[]
+ public users:Array<User>=[]
 
 
- saveUser(data:any){
+ saveUser(data:User){
     this.users.push(data);
  }
 
- getAllUsers():Array<any>{
+ getAllUsers():Array<User>{
    return this.users; 
  }
 
@@ -37,8 +38,7 @@ export class UserService {
     if(this.users[i].email == email ){
       return this.users[i]
     }
-  }
-
+  } 
   return null
  }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { User } from '../user';
 import { UserService } from '../user.service';
 
 @Component({
@@ -13,20 +14,20 @@ export class SignupComponent implements OnInit {
 
   users: Array<any> = []
 
-
-  firstName: string = ""
-  email: string = ""
-  password: string = ""
+  user:User = {firstName:"",email:"",password:""}
+  // firstName: string = ""
+  // email: string = ""
+  // password: string = ""
   constructor(private userService: UserService, private router: Router,private toastr:ToastrService) { }
 
   ngOnInit(): void {
   }
 
-  saveUser() {
+  saveUser() {   
 
-    console.log(this.firstName);
-    let user = { "firstName": this.firstName, "email": this.email, "password": this.password }
-    this.userService.saveUser(user);
+    console.log(this.user.firstName);
+    // let user = { "firstName": this.firstName, "email": this.email, "password": this.password }
+    this.userService.saveUser(this.user);
     this.toastr.success("Signup Done","Success",{
       timeOut:3000
     })

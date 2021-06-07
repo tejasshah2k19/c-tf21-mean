@@ -109,6 +109,40 @@ ans: Router
 
 to fetch data from url we need to use ActivatedRoute class 
 
+private activatedRoute:ActivatedRoute 
+
+assume that email is in url/parameter and we want to fetch it
+this.activatedRoute.snapshot.params.email 
+
+
+----------------------------------------
+how to add bootstrap ?
+1)CDN link - as an external css 
+2)download - stye.css import 
+3)download - angular.json[config] 
+
+how to download? 
+we have npm so using npm we can download any lib 
+
+
+how to add any external lib? -- ngx-toastr 
+----------------------------------------
+
+REST api 
+
+urls --> server --> data --> CRUD 
+                --> resonse --> xml* ==> json 
+  protocol:
+          C -- POST 
+          R -- GET 
+          U -- PUT / PATCH 
+          D -- DELETE 
+
+form method=""
+
+
+
+
 
 
 
