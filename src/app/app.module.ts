@@ -12,7 +12,9 @@ import { ListUserComponent } from './list-user/list-user.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ListEmployeeComponent } from './list-employee/list-employee.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MenuComponent,
     CalcComponent,
     ListUserComponent,
-    EditUserComponent
+    EditUserComponent,
+    AddEmployeeComponent,
+    ListEmployeeComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +33,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

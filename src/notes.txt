@@ -128,17 +128,35 @@ we have npm so using npm we can download any lib
 how to add any external lib? -- ngx-toastr 
 ----------------------------------------
 
+SOAP 
 REST api 
 
+REST VS SOAP 
+
 urls --> server --> data --> CRUD 
-                --> resonse --> xml* ==> json 
+                --> response --> xml* ==> json 
   protocol:
-          C -- POST 
-          R -- GET 
-          U -- PUT / PATCH 
-          D -- DELETE 
+          C -- POST --new resource  
+          R -- GET  --read 
+          U -- PUT / PATCH --modify
+          D -- DELETE --destroy 
 
 form method=""
+------------------------------------
+REST api - call -- HttpClientModule --> HttpClient 
+
+to call rest api in angular , we have HttpClientModule  , from this module we use HttpClient class 
+
+so first we need to register HttpClientModule in app.module.ts and then we use HttpClient 
+same as NgxToastr 
+
+when we add any module and ctrl+space not works we can take help of documentation for imporing any module. 
+
+Observable 
+
+
+
+
 
 
 

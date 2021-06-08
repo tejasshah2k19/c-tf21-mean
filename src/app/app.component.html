@@ -1,5 +1,18 @@
-<a routerLink="signup">Signup</a> | 
-<a routerLink="calc">Calc</a> |
-<a routerLink="listusers">Users</a>
-<br>
- <router-outlet></router-outlet>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">MEAN21C</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a routerLink="signup">Signup</a> </li>
+            <li><a routerLink="calc">Calc</a></li>
+            <li><a routerLink="listusers">Users</a></li>
+            <li><a routerLink="addemployee">Add Employee</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
