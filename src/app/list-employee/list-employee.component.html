@@ -22,7 +22,7 @@
                     <td>{{e.email}}</td>
                     <td>{{e.password}}</td>
                     <td>{{e.gender}}</td>
-                    <td> <a routerLink="#"> Edit </a> |<a  (click)="deleteEmployee(e.id)"> Delete </a> </td>    
+                    <td> <a routerLink="/editemployee/{{e.id}}"> Edit </a> |<a  (click)="deleteEmployee(e.id)"> Delete </a> </td>    
                 </tr>
             </tbody>
         </table>

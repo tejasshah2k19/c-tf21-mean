@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
+import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { ListEmployeeComponent } from './list-employee/list-employee.component';
     ListUserComponent,
     EditUserComponent,
     AddEmployeeComponent,
-    ListEmployeeComponent
+    ListEmployeeComponent,
+    EditEmployeeComponent
   ],
   imports: [
     BrowserModule,
