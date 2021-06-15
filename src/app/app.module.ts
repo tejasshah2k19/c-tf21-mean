@@ -7,7 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { MenuComponent } from './menu/menu.component';
 import { CalcComponent } from './calc/calc.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListUserComponent } from './list-user/list-user.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { ToastrModule } from 'ngx-toastr';
@@ -16,6 +16,7 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
+import { ReactiveFormsSignupComponent } from './reactive-forms-signup/reactive-forms-signup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
     EditUserComponent,
     AddEmployeeComponent,
     ListEmployeeComponent,
-    EditEmployeeComponent
+    EditEmployeeComponent,
+    ReactiveFormsSignupComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
     FormsModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
