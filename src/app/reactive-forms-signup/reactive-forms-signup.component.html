@@ -50,6 +50,16 @@
             <div class="form-group">
                 <label>Password</label>
                 <input type="password" class="form-control" formControlName="password" />
+                <span *ngIf="myForm.get('password')?.touched && myForm.get('password')?.invalid">
+                    <span *ngIf="myForm.get('password')?.hasError('required')">
+                        Please Enter Password
+                    </span>
+                    <span *ngIf="myForm.get('password')?.dirty && myForm.get('password')?.hasError('strengthError')">
+                        Please Enter Valid Password ( 1upper , 1lower,1special,and atleast 8 in length)
+                    </span>
+
+
+                </span>
             </div>
 
 
