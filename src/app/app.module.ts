@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { ReactiveFormsSignupComponent } from './reactive-forms-signup/reactive-forms-signup.component';
+import { UserHomeComponent } from './user-home/user-home.component';
+import { LogoutComponent } from './logout/logout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,9 @@ import { ReactiveFormsSignupComponent } from './reactive-forms-signup/reactive-f
     AddEmployeeComponent,
     ListEmployeeComponent,
     EditEmployeeComponent,
-    ReactiveFormsSignupComponent
+    ReactiveFormsSignupComponent,
+    UserHomeComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
