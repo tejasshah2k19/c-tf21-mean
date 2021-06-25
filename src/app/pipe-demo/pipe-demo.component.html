@@ -1,0 +1,63 @@
+<app-menu></app-menu>
+
+
+<br>
+{{firstName | uppercase}}
+<br>
+{{lastName | lowercase}}
+<br>
+Currency 
+<br>
+{{cur | currency}}
+<br>
+{{cur | currency:"INR"}}
+<br>
+{{cur | currency:"INR":true}}
+<br>
+{{cur | currency:"INR":false}}
+<br>
+{{cur | currency:"USD":false}}
+
+<br>
+Number
+<br>
+{{num | number }}
+
+<br>
+
+6.2-3 :: {{num | number:'6.2-3' }}
+
+<br>
+6.2-2 :: {{num | number:'6.2-2' }}
+
+<br>
+6.1-1 :: {{num | number:'6.1-1' }}
+
+
+
+<br>
+Date
+
+<br>
+{{todayDate | date}}
+
+<br>
+{{todayDate | date:'d/M/y'}}
+
+
+<br>
+{{todayDate | date:'d/MM/y'}}
+
+
+
+<br>
+{{todayDate | date:'shortTime'}}
+
+
+<br>
+
+{{"jai jawan" | uppercase}}
+
+<br>
+
+{{ 5  | sqr}}

@@ -5,11 +5,13 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { CalcComponent } from './calc/calc.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { LoginComponent } from './login/login.component';
 import { LogincheckGuard } from './logincheck.guard';
 import { LogoutComponent } from './logout/logout.component';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { ReactiveFormsSignupComponent } from './reactive-forms-signup/reactive-forms-signup.component';
 import { SignupComponent } from './signup/signup.component';
 import { UserHomeComponent } from './user-home/user-home.component';
@@ -26,7 +28,9 @@ const routes: Routes = [
   {path:"login",component:LoginComponent},
   {path:"",component:LoginComponent},
   {path:"home",component:UserHomeComponent,canActivate:[LogincheckGuard]},
-  {path:"logout",component:LogoutComponent}
+  {path:"logout",component:LogoutComponent},
+  {path:"pipe-demo",component:PipeDemoComponent},
+  {path:"forgetpassword",component:ForgetPasswordComponent}
 ];
 
 

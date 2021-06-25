@@ -7,6 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class LogincheckGuard implements CanActivate {
+     
+ 
   constructor(private router: Router,private ts:ToastrService) {
 
   }

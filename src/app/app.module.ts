@@ -19,6 +19,9 @@ import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { ReactiveFormsSignupComponent } from './reactive-forms-signup/reactive-forms-signup.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 import { LogoutComponent } from './logout/logout.component';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
+import { SqrPipe } from './sqr.pipe';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,10 @@ import { LogoutComponent } from './logout/logout.component';
     EditEmployeeComponent,
     ReactiveFormsSignupComponent,
     UserHomeComponent,
-    LogoutComponent
+    LogoutComponent,
+    PipeDemoComponent,
+    SqrPipe,
+    ForgetPasswordComponent
   ],
   imports: [
     BrowserModule,
